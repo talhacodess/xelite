@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
+import ContactUs from '../pages/ContactUs'
 
 function App() {
 
 
   return (
     <>
-    <h3>Heelo</h3>
+    <ContactUs/>
  
     </>
   )
