@@ -162,6 +162,28 @@ function SingleProduct() {
             <p className='text-lg'>100% made in Italy, inspired by the country’s rich heritage.</p>
           </div>
         </div>
+           {/**What makes us different */}
+        <div className='text-center my-20 px-10 md:px-40 space-y-10'>
+          <h3 className='text-3xl font-semibold mt-5'>What makes us different </h3>
+          <div className='grid grid-cols-3 gap-5'>
+            <div className='flex flex-col gap-3 sborder-2 border-[#D9D9D987] border-1 shadow  rounded-md p-3'>
+              <h4 className='text-2xl font-semibold'>Love it or your money back</h4>
+              <p className='text-lg font-light'>Your happiness is our priority and we are committed to providing you with the best customer service and quality products.</p>
+              <p className='text-lg font-light'>If for any reason, your purchase is not right for you, you can return or exchange it.</p>
+            </div>
+            <div className='flex flex-col gap-3 sborder-2 border-[#D9D9D987] border-1 shadow  rounded-md p-3 transform -translate-y-5 
+            transition-all duration-300'>
+              <h4 className='text-2xl font-semibold'>Slow fashion. Affordable luxury.</h4>
+              <p className='text-lg font-light'>Your happiness is our priority and we are committed to providing you with the best customer service and quality products.</p>
+              <p className='text-lg font-light'>If for any reason, your purchase is not right for you, you can return or exchange it.</p>
+            </div>
+            <div className='flex flex-col gap-3 sborder-2 border-[#D9D9D987] border-1 shadow  rounded-md p-3 '>
+              <h4 className='text-2xl font-semibold'>We make scarves you'll be proud to wear</h4>
+              <p className='text-lg font-light'>Your happiness is our priority and we are committed to providing you with the best customer service and quality products.</p>
+              <p className='text-lg font-light'>If for any reason, your purchase is not right for you, you can return or exchange it.</p>
+            </div>
+          </div>
+        </div>
 
 
 
