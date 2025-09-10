@@ -10,6 +10,7 @@ import who from '../src/assets/2.webp'
 import how from '../src/assets/1.webp'
 import where from '../src/assets/3.webp'
 import FaqComp from '../component/FaqComp'
+import SingleProductTabs from '../component/SingleProductTabs'
 
 function SingleProduct() {
   
@@ -31,10 +32,10 @@ function SingleProduct() {
     <>
       <div className='container mx-auto my-10 px-5'>
 
-        <div className='grid grid-cols-2 gap-5'>
-          <div>
-            <div className='grid grid-cols-12 '>
-              <div className='col-span-2 flex flex-col gap-1'>
+        <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
+          
+            <div className=' flex gap-5 md:flex-row flex-col '>
+              <div className=' flex md:flex-col flex-row overflow-x-auto gap-2  max-h-auto '>
                 <img className='w-[80px] h-[110px] rounded' onClick={() => setActiveImage(images.image)} src={images.image} alt="" />
                 <img className='w-[80px] h-[110px] rounded' onClick={() => setActiveImage(images.image2)} src={images.image2} alt="" />
                 <img className='w-[80px] h-[110px] rounded' onClick={() => setActiveImage(images.image3)} src={images.image3} alt="" />
@@ -49,7 +50,7 @@ function SingleProduct() {
               </div>
 
             </div>
-          </div>
+         
           <div>
             <div className='py-10'>
               <h1 className='text-4xl leading-12 mb-2'>V-neck cotton T-shirt</h1>
@@ -145,7 +146,7 @@ function SingleProduct() {
 
         </div>
 
-        <div className='grid grid-cols-3 gap-5 '>
+        <div className='grid md:grid-cols-3 grid-cols-1 gap-5 '>
           <div className='flex flex-col items-center p-10 text-center mt-5 gap-3 group transform transition-all duration-300 '>
           <div className='bg-[#c5a980] p-3 rounded-full  '><img src={who} alt="" width={100} height={100} className=' object-cover group-hover:skew-3' /></div>  
             <h4 className='text-4xl font-semibold capitalize'>who</h4>
@@ -165,13 +166,13 @@ function SingleProduct() {
            {/**What makes us different */}
         <div className='text-center my-20 px-10 md:px-40 space-y-10'>
           <h3 className='text-3xl font-semibold mt-5'>What makes us different </h3>
-          <div className='grid grid-cols-3 gap-5'>
+          <div className='grid md:grid-cols-3 grid-cols-1 gap-5'>
             <div className='flex flex-col gap-3 sborder-2 border-[#D9D9D987] border-1 shadow  rounded-md p-3'>
               <h4 className='text-2xl font-semibold'>Love it or your money back</h4>
               <p className='text-lg font-light'>Your happiness is our priority and we are committed to providing you with the best customer service and quality products.</p>
               <p className='text-lg font-light'>If for any reason, your purchase is not right for you, you can return or exchange it.</p>
             </div>
-            <div className='flex flex-col gap-3 sborder-2 border-[#D9D9D987] border-1 shadow  rounded-md p-3 transform -translate-y-5 
+            <div className='flex flex-col gap-3 sborder-2 border-[#D9D9D987] border-1 shadow  rounded-md p-3 transform md:-translate-y-5  translate-y-0
             transition-all duration-300'>
               <h4 className='text-2xl font-semibold'>Slow fashion. Affordable luxury.</h4>
               <p className='text-lg font-light'>Your happiness is our priority and we are committed to providing you with the best customer service and quality products.</p>
@@ -183,6 +184,11 @@ function SingleProduct() {
               <p className='text-lg font-light'>If for any reason, your purchase is not right for you, you can return or exchange it.</p>
             </div>
           </div>
+        </div>
+
+        {/** Products R/ */}
+        <div className=''>
+          <SingleProductTabs/>
         </div>
 
 
