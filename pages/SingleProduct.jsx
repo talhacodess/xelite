@@ -12,13 +12,19 @@ import where from '../src/assets/3.webp'
 import FaqComp from '../component/FaqComp'
 import SingleProductTabs from '../component/SingleProductTabs'
 
+
+
+
 function SingleProduct() {
   const [images, setImages] = React.useState({
     image: "https://modavereact.vercel.app/images/products/womens/women-7.jpg",
     image2: "https://modavereact.vercel.app/images/products/womens/women-6.jpg",
     image3: "https://modavereact.vercel.app/images/products/womens/women-176.jpg",
     image5: "https://modavereact.vercel.app/images/products/womens/women-23.jpg",
-    image6: "https://modavereact.vercel.app/images/products/womens/women-24.jpg"
+    image6: "https://modavereact.vercel.app/images/products/womens/women-24.jpg",
+    image7: "https://modavereact.vercel.app/images/products/womens/women-24.jpg",
+    image8: "https://modavereact.vercel.app/images/products/womens/women-24.jpg",
+    image9: "https://modavereact.vercel.app/images/products/womens/women-24.jpg",
   });
 
   const [activeImage, setActiveImage] = React.useState(images.image);
@@ -32,6 +38,7 @@ function SingleProduct() {
             <div className="flex gap-5 md:flex-row  flex-col-reverse">
               {/* Thumbnails */}
               <div className="flex md:flex-col flex-row overflow-x-auto md:overflow-y-auto gap-2 md:h-[360px] lg:h-[600px] h-auto">
+
                 {Object.values(images).map((img, i) => (
                   <img
                     key={i}
