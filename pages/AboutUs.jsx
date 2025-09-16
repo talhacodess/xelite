@@ -112,14 +112,15 @@ function AboutUs() {
       </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
   {teams.map((member, index) => (
-    <div key={index} className="flex flex-col justify-center items-center gap-2 p-5">
+    <div key={index} className="flex flex-col justify-center items-start gap-2 p-5">
       <div
-        className="rounded-xl shadow-md w-[300px] h-[300px] bg-center bg-cover transition-transform duration-500 hover:scale-105"
+        className="rounded-xl shadow-md w-[300px] h-[300px] bg-center bg-cover transition-transform duration-500"
         style={{ backgroundImage: `url(${member.image})` }}
       ></div>
 
-      <h4 className="mt-3 font-semibold">{member.name}</h4>
+      <h4 className="mt-3 font-semibold text-lg  ">{member.name}</h4>
       <p className="text-sm text-gray-500">{member.role}</p>
+      <p className='text-start text-lg'>{member.bio}</p>
     </div>
   ))}
 </div>
