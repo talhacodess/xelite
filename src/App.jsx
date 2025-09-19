@@ -5,6 +5,7 @@ import SingleProduct from '../pages/SingleProduct'
 import { Route, Router, Routes } from 'react-router'
 import AboutUs from '../pages/AboutUs'
 import Blog from '../pages/Blog'
+import BlogSingle from '../pages/BlogSingle'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/single-product' element={<SingleProduct />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/blog' element={<Blog/>} />
+        <Route path='/single-blog' element={<BlogSingle/>} />
 
       </Routes>
 
