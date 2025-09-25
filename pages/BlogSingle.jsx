@@ -23,7 +23,7 @@ function BlogSingle() {
         <div className="grid grid-cols-12 bg-white shadow  justify-center items-center gap-4 md:p-10 p-2 rounded-2xl ">
           <div className='col-span-8'>
             <div className='w-full flex flex-col  gap-5  mt-5'>
-              <div>
+              <div>npm
                 <h3 className="md:text-5xl text-lg font-medium text-[#454444]  text-balance md:leading-10 leading-8">How Technology is Transforming the Industry</h3>
               </div>
               <div className='flex justify-start items-center gap-5'>

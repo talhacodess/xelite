@@ -6,6 +6,7 @@ import { Route, Router, Routes } from 'react-router'
 import AboutUs from '../pages/AboutUs'
 import Blog from '../pages/Blog'
 import BlogSingle from '../pages/BlogSingle'
+import LoginSignup from '../pages/loginsignup/LoginSignup'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/blog' element={<Blog/>} />
         <Route path='/single-blog' element={<BlogSingle/>} />
+        <Route path='/login-signup' element={<LoginSignup/>} />
 
       </Routes>
 

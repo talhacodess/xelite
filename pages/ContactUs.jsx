@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import PopupLoginSignUp from '../component/PopupLoginSignUp'
 
 function ContactUs() {
+
+    const [showModel, setShowModel] = useState(false)
     return (
         <div>
             {/** Map */}
@@ -18,6 +21,7 @@ function ContactUs() {
             {/** Contact Info */}
             <div className='my-10 mx-2'>
                 <div className='container mx-auto px-5 bg-gray-100 p-2 rounded-lg shadow-md'>
+                    <button className='bg-amber-300 p-4 rounded-2xl shadow w-30' onClick={()=>setShowModel(true)}> Login / Sign Up</button> {showModel && <PopupLoginSignUp onClose={()=>setShowModel(false)}/>}
                     <div className='grid md:grid-cols-12 grid-cols-1 gap-10 mt-10'>
                         <div className='md:col-span-8 col-span-1'>
                             <div>
