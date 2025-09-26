@@ -24,9 +24,9 @@ function PopupLoginSignUp({ onClose }) {
     <div
       ref={modelRef}
       onClick={closeModel}
-      className="fixed inset-0 backdrop-blur-sm z-[9999] flex justify-center items-center bg-black/70"
+      className="fixed inset-0 backdrop-blur-sm z-[9999] flex justify-center items-center bg-black/20"
     >
-      <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden m-1">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -111,26 +111,35 @@ function PopupLoginSignUp({ onClose }) {
               >
                 <h3 className="text-2xl font-semibold mb-6">Create an Account</h3>
                 <form className="space-y-5">
-                  <input
+                  <div className='grid grid-cols-2 gap-2'>
+                    <div> <input
                     type="text"
                     placeholder="Full Name"
                     className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#c5a980] outline-none"
-                  />
-                  <input
+                  /></div>
+                    <div> <input
                     type="email"
                     placeholder="Email Address"
                     className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#c5a980] outline-none"
-                  />
-                  <input
+                  /></div>
+                  </div>
+                  <div className='grid md:grid-cols-1  gap-2'>
+                    <div>  <input
                     type="password"
                     placeholder="Password"
                     className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#c5a980] outline-none"
-                  />
-                  <input
+                  /></div>
+                    <div>   <input
                     type="password"
                     placeholder="Confirm Password"
                     className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#c5a980] outline-none"
-                  />
+                  /></div>
+
+                  </div>
+                 
+                 
+                
+               
 
                   <div className="flex items-center gap-2 text-sm">
                     <input type="checkbox" />
