@@ -3,6 +3,12 @@ import banner from '../src/assets/about-banner.webp'
 import detail from '../src/assets/blog-details.jpg'
 import { CiCalendar } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaTiktok } from 'react-icons/fa';
+import { FaPinterest } from 'react-icons/fa';
+
 
 function BlogSingle() {
   return (
@@ -20,11 +26,11 @@ function BlogSingle() {
       </div>
       <div className="container mx-auto mt-[-100px] ">
 
-        <div className="grid grid-cols-12 bg-white shadow  justify-center items-center gap-4 md:p-10 p-2 rounded-2xl ">
+        <div className="grid grid-cols-12 bg-white shadow  justify-center  gap-16 md:p-10 p-2 rounded-2xl ">
           <div className='col-span-8'>
             <div className='w-full flex flex-col  gap-5  mt-5'>
-              <div>npm
-                <h3 className="md:text-5xl text-lg font-medium text-[#454444]  text-balance md:leading-10 leading-8">How Technology is Transforming the Industry</h3>
+              <div>
+                <h3 className="md:text-5xl text-lg font-semibold text-[#454444]  text-balance md:leading-13 leading-10">How Technology is Transforming the Industry</h3>
               </div>
               <div className='flex justify-start items-center gap-5'>
                 <div className='flex  gap-2 text-lg'><span><CiCalendar size={30} /></span>February 28, 2024</div>
@@ -43,7 +49,23 @@ function BlogSingle() {
 
             </div>
           </div>
-          <div className='col-span-4'></div>
+          <div className='col-span-4 '>
+            <div><h4 className='text-2xl font-medium mb-4'>Follow Us</h4></div>
+            <div className='flex gap-3 '>
+              <div className=' rounded-full border-1 p-2 transition duration-500 hover:bg-[#3b5998] hover:text-white'><FaFacebookF size={20} /></div>
+              <div className=' rounded-full border-1 p-2 transition duration-500 hover:bg-gradient-to-b hover:from-[#8a3ab9] hover:via-[#e95950] hover:to-[#fccc63] hover:text-white'><FaInstagram size={20} /></div>
+              <div className="rounded-full border p-2 transition duration-500 hover:*:text-white hover:bg-[#555555] 
+      ">
+                <FaXTwitter size={20} />
+              </div>
+
+              <div className=' rounded-full border-1 p-2 transition duration-500 hover:bg-gradient-to-b hover:from-[#25f4ee] hover:via-[#000] hover:to-[#fe2c55] hover:text-white'><FaTiktok size={20} /></div>
+              <div className=' rounded-full border-1 p-2 transition duration-500 hover:bg-[#cb2027] hover:text-white'><FaPinterest size={20} /></div>
+            </div>
+              <div><h4 className='text-3   xl font-medium mt-6'>Relatest Post</h4></div>
+           
+
+          </div>
 
 
 
