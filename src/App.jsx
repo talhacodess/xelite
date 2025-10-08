@@ -7,6 +7,7 @@ import AboutUs from '../pages/AboutUs'
 import Blog from '../pages/Blog'
 import BlogSingle from '../pages/BlogSingle'
 import Cart from '../pages/cartShopping/Cart'
+import Profile from '../pages/profile/Profile'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/blog' element={<Blog/>} />
         <Route path='/single-blog' element={<BlogSingle/>} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/profile' element={<Profile/>} />
     
 
       </Routes>
