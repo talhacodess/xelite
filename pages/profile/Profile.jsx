@@ -110,7 +110,7 @@ function Profile() {
       {showProfileModal && (
         <div className="fixed inset-0 bg-black/20 backdrop-blur-sm bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl p-6 w-[90%] md:w-[500px] shadow-xl relative animate-[fadeIn_0.3s_ease]">
-            <button
+            <button    
               onClick={() => setShowProfileModal(false)}
               className="absolute top-3 right-3 text-gray-500 hover:text-black"
             >
