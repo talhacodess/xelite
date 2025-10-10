@@ -8,6 +8,7 @@ import Blog from '../pages/Blog'
 import BlogSingle from '../pages/BlogSingle'
 import Cart from '../pages/cartShopping/Cart'
 import Profile from '../pages/profile/Profile'
+import ShippingNdPackaging from '../pages/ShippingNdPackaging'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/single-blog' element={<BlogSingle/>} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/shipping-packaging' element={<ShippingNdPackaging/>} />
     
 
       </Routes>
