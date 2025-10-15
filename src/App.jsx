@@ -9,6 +9,7 @@ import BlogSingle from '../pages/BlogSingle'
 import Cart from '../pages/cartShopping/Cart'
 import Profile from '../pages/profile/Profile'
 import ShippingNdPackaging from '../pages/ShippingNdPackaging'
+import ReturnsExchangesPolicy from '../pages/ReturnsExchangesPolicy'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/cart' element={<Cart/>} />
         <Route path='/profile' element={<Profile/>} />
         <Route path='/shipping-packaging' element={<ShippingNdPackaging/>} />
+        <Route path='/Our-Returns-and-Exchanges-Policy' element={<ReturnsExchangesPolicy/>} />
     
 
       </Routes>
